@@ -311,7 +311,7 @@ body .navbar {
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
     margin-bottom: 40px;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 /*.formacion-horizontal-timeline*/
@@ -484,6 +484,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
     max-width: 400px;
     text-align: left;
     margin-left: 60px;
+    margin-top: 40px;
 }
 
 #contacto .contenido-contacto p {

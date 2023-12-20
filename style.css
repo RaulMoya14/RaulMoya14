@@ -1,9 +1,12 @@
 html { 
     scroll-behavior: smooth; 
   }
+body{
+    text-align: justify;
+}
 /* Estilos CSS para la barra de navegación */
 body .navbar {
-    background-color: #252529 !important;
+    background-color: #343439 !important;
 }
 .navbar-brand {
     color: #ff5080 !important;
@@ -171,17 +174,17 @@ body .navbar {
     text-decoration-thickness: 5px;
 }
 #sobre-mi {
-    max-width: 1100px;
+    max-width: 100%;
     margin: auto;
-    padding: 100px 15px;
     color: #111135;
     display: flex;
+    padding-top: 70px;
+    background-color: white;
 }
-.img-me{
-    width: 370px;
+.col .img-me{
+    width: 400px;
     height: auto;
-    padding: 30px;
-    align-items: center;
+    padding: 5px;
 }
 #sobre-mi .sobre-mi {
     margin: 5px 5px;
@@ -244,17 +247,13 @@ body .navbar {
 .sobre-mi .col-md-5 {
     border: 2px solid #ff5080; /* Cambia el color del borde según tus preferencias */
     padding: 5px;
-    margin-right: 5px; /* Ajusta el margen entre el icono y el texto según tus preferencias */
+    margin-right: 1px; /* Ajusta el margen entre el icono y el texto según tus preferencias */
     border-radius: 4px; /* Ajusta el radio del borde según tus preferencias */
     margin-bottom:5px; 
   }
 /*seccion FORMACION */
 #formacion {
-    background-color:white;
-    padding-top: 50px;
-}
-#formacion h2{
-    margin-top: 10%;
+    background-color:rgb(191, 190, 190)
 }
 
 .formacion-horizontal-timeline {
@@ -269,7 +268,6 @@ body .navbar {
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
     margin-bottom: 40px;
-    margin-top: 20px;
 }
 
 /*.formacion-horizontal-timeline*/
@@ -420,99 +418,48 @@ span.single-timeline-horizontal {
 /* *********************/
 /* seccion P O R T F O L I O */
 /* *********************/
-
-#portfolio {
-    max-width: 100%;
-    padding: 20px 20px;
-    margin: auto;
-}
-
 #portfolio .titulo-seccion {
-    text-align: center;
     font-size: 32px;
     text-transform: uppercase;
     color: #111135;
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
-    margin-bottom: 110px;
-    margin-top: 100px;
+    margin-bottom: 40px;
+    margin-top: 80px;
 }
 
-#portfolio .row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 80px;
-}
-#portfolio .row {
-    padding: 20px 20px;
+#portfolio .card {
+    transition: transform 0.3s; /* Añade una transición suave al efecto hover */
+    padding: 20px;
 }
 
-#portfolio .row .col .proyecto {
+#portfolio .container{
+    padding: 5%;
+}
+
+#portfolio .card:hover {
+    transform: scale(1.05); /* Ajusta la escala al pasar el ratón para dar un efecto de hover */
+}
+
+#portfolio .card img {
     max-width: 100%;
-    max-height: 100%;
-    border: 1px solid #000;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #ccc;
-    transition: transform 0.3s;
+    height: auto;
 }
 
-#portfolio .row .col .info-proyecto {
-    width: 100%;
-    height: 100%;
-    border: 1px solid #000;
-    margin: 0 10px;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #ccc;
-    transition: transform 0.3s;
+#portfolio .card-body {
+    padding: 50px;
 }
-.info-proyecto h3{
-    font-size: 32px;
-    text-align: center;
-    padding: 15px;
+
+#portfolio .card-title {
+    font-size: 20px;
+    font-weight: bold;
 }
-.info-proyecto p{
-    text-align: center; 
+
+#portfolio .card-text {
     font-size: 16px;
-    padding: 10px;
-    justify-content: center;
+    color: #565656;
 }
-
-#portfolio .row .col .proyecto img {
-    width: 100%;
-    height: 100%;
-    object-fit: relative;  
-    transition: .5s;
-}
-.proyecto :hover{
-    transform: scale(1.1);
-}
-#portfolio .row .col .proyecto:hover img {
-    filter: grayscale(0);
-}
-
-#portfolio .row .col .proyecto .info {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #ff5080;
-    width: 100%;
-    padding: 10px;
-    opacity: 0;
-    transition: .5s;
-}
-
-#portfolio .row .col .proyecto:hover .info {
-    opacity: 1;
-    bottom: 0;
-}
-.info-proyecto{
-    border: 1px solid #000;
-    background-color: #f7f1f1;
-    padding: 20px 20px;
-}
-
 /* seccion CONTACTO */
 #contacto {
     padding: 5% 5%;
@@ -619,4 +566,10 @@ span.single-timeline-horizontal {
     color: #fff;
     font-size: 16px;
     margin-top: 15px;
+}
+
+@media (max-width: 767px) {
+    #portfolio .card {
+        padding: 40px; /* Ajusta el margen entre las tarjetas en dispositivos móviles */
+    }
 }

@@ -233,7 +233,7 @@ body .navbar {
     /* Ajusta el tamaño de la fuente */
 }
 .col-md-6 .img-fluid{
-    max-width: 82% !important;
+    max-width: 80% !important;
     align-items: center !important;
     padding-left: 20%;
 }

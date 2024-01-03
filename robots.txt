@@ -1,6 +1,7 @@
+Sitemap: https://raulmoya14.github.io//sitemap.xml
+
 User-agent: *
 Disallow: /assets/
 Disallow: /img/
-Disallow: /style.css
+Disallow: /css/
 
-Sitemap: https://www.tudominio.com/sitemap.xml

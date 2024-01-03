@@ -4,12 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Raul Moya</title>
+    <title>Raúl Moya Campillos</title>
+    <meta name="author" content="Raúl Moya Campillos">
+    <meta name="description" content="¡Hola! Soy Raúl Moya Campillos, estudiante de Ingeniería Informática en la Universidad de Castilla-La Mancha. En mi página podrás más sobre mí">
+    <meta name="keyword" content="Raúl Moya Campillos, Raúl Moya, Ingeniería Informática, Informática, Ingeniero Informático, Escuela Superior de Informática, Universidad de Castilla-La Mancha, portfolio, java, tecnología">    
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="css/style.css">  
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CCPGWH7EW5"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+	gtag('config', 'G-CCPGWH7EW5');
+	</script>
 </head>
 
 <body>
@@ -52,19 +62,19 @@
         </div>
     </section>
 
-    <section id="sobre-mi">
-        <div class="container">
-            <h2 class="titulo-seccion text-center">Sobre Mí</h2>
+    <section id="sobre-mi" class="container mt-4">
             <div class="row">
-                <div class="col sobre-mi">
-                    <div class="sobre_mi_img">
-                        <img src="img/canva.png" class="img-me" alt="Raul Moya">
-                    </div>
-                </div>
-                <div class="col sobre-mi">
+                <h2 class="titulo-seccion text-center">Sobre mí</h2>
+            <!-- Columna para la foto -->
+            <div class="col-md-6 mx-md-auto offset-md-3">
+                <img src="img/canva.png" alt="Foto Raúl Moya" class="img-fluid">
+            </div>
+            <!-- Columna para el texto -->
+            <div class="col-md-6 mx-md-auto my-md-0">
+                <div class="my-3">
                     <h2>Hola, Soy <span>Raúl Moya</span> </h2>
                     <h3>Ingeniero Informático</h3>
-                    <p>Soy estudiante del grado en Ingenieria Informatica de la Escuela Superior de Informática de Ciudad Real. Estoy especializado en la rama de Tecnologías de la Información. Soy una persona cauta, trabajadora y comprometida, con el objetivo de seguir formándome en nuevas tecnologías.</p>
+                    <p>Soy estudiante del grado en Ingenieria Informatica en la <a href="https://esi.uclm.es/" target="_blank">Escuela Superior de Informática</a> de la <a href="https://www.uclm.es/" target="_blank">Universidad de Castilla-La Mancha</a>. Estoy especializado en la rama de <a href="https://esi.uclm.es/index.php/grado-en-ingenieria-informatica/plan-de-estudios/" target="_blank">Tecnologías de la Información</a>. Soy una persona cauta, trabajadora y comprometida, con el objetivo de seguir formándome en nuevas tecnologías.</p>
                     <p>Busco oportunidades que ofrezcan crecimiento mutuo y la posibilidad de alcanzar
                         metas ambiciosas. Estas son algunas de mis aptitudes.</p>
                         <div class="container text-center">
@@ -84,40 +94,17 @@
                                     <i class="fa-solid fa-check"><span>Resolucion de problemas</span></i>
                                 </div>
                             </div>
-                        </div>    
+                        </div>
                 </div>
             </div>
-        </div>
-    </section>
+            </div>
+      </section>
 
     <section id="formacion">
         <h2 class="titulo-seccion text-center">Formación</h2>
 			<div class="container">
 				<div class="formacion-horizontal-timeline">
 					<div class="row">
-						<div class="col-sm-4">
-							<div class="single-horizontal-timeline">
-								<div class="experience-time">
-									<h2>2018 - 2020</h2>
-									<h3>Bachiller  Ciencias Tecnológicas</h3>
-								</div><!--/.experience-time-->
-								<div class="timeline-horizontal-border">
-									<i class="fa fa-circle" aria-hidden="true"></i>
-									<span class="single-timeline-horizontal"></span>
-								</div>
-								<div class="timeline">
-									<div class="timeline-content">
-										<h4 class="title">
-											IES Ojos del Guadiana
-										</h4>
-										<h5>Daimiel, Ciudad Real</h5>
-										<p class="description">
-											Primeros pasos con las tecnologías, realizando proyectos con Arduino, programación por bloques e iniciación en desarrollo web. 
-										</p>
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
-							</div>
-						</div>
 						<div class="col-sm-4">
 							<div class="single-horizontal-timeline">
 								<div class="experience-time">
@@ -131,11 +118,11 @@
 								<div class="timeline">
 									<div class="timeline-content">
 										<h4 class="title">
-											Escuela Superior de Informática, UCLM
+											<a href="https://www.uclm.es/" target="_blank">Universidad de Castilla-La Mancha</a>
 										</h4>
 										<h5>Ciudad Real</h5>
 										<p class="description">
-											Rama de Tecnologías de la Información.<br> Adquisición de habilidades y conocimientos técnicos.
+											Especializado en la rama de <a href="https://esi.uclm.es/index.php/grado-en-ingenieria-informatica/plan-de-estudios/" target="_blank"> Rama de Tecnologías de la Información</a>
 										</p>
 									</div><!--/.timeline-content-->
 								</div><!--/.timeline-->
@@ -164,6 +151,29 @@
 								</div><!--/.timeline-->
 							</div>
 						</div>
+                        <div class="col-sm-4">
+							<div class="single-horizontal-timeline">
+								<div class="experience-time">
+									<h2>2018 - 2020</h2>
+									<h3>Bachiller</h3>
+								</div><!--/.experience-time-->
+								<div class="timeline-horizontal-border">
+									<i class="fa fa-circle" aria-hidden="true"></i>
+									<span class="single-timeline-horizontal"></span>
+								</div>
+								<div class="timeline">
+									<div class="timeline-content">
+										<h4 class="title">
+											IES Ojos del Guadiana
+										</h4>
+										<h5>Daimiel, Ciudad Real</h5>
+										<p class="description">
+                                            Modalidad Científico-Técnico
+										</p>
+									</div><!--/.timeline-content-->
+								</div><!--/.timeline-->
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -181,16 +191,21 @@
                         <div class="galeria-fotos container text-center">
                             <div class="row row-cols-2">
                                 <div class="col">
-                                    <img src="img/c.png" class="img-thumbnail icon" alt="...">
+                                    <img src="img/c.png" class="img-thumbnail icon" alt="Lenguaje C"><br>
+                                    <b class="tecnologia">C</b>
                                 </div>
                                 <div class="col">
-                                    <img src="img/cSharp.png" class="img-thumbnail icon" alt="...">
+                                    <img src="img/cSharp.png" class="img-thumbnail icon" alt="cSharp">
+                                    <b class="tecnologia">C#</b>
                                 </div>
                                 <div class="col">
-                                    <img src="img/python.png" class="img-thumbnail icon" alt="...">
+                                    <img src="img/python.png" class="img-thumbnail icon" alt="Python">
+                                    <b class="tecnologia">Python</b>
                                 </div>
                                 <div class="col">
-                                    <img src="img/java.png" class="img-thumbnail icon" alt="...">
+                                    <br>
+                                    <img src="img/java.png" class="img-thumbnail icon" alt="Java">
+                                    <b class="tecnologia">Java</b>
                                 </div>
                             </div>
                         </div>
@@ -202,16 +217,20 @@
                         <div class="galeria-fotos container text-center">
                             <div class="row row-cols-2">
                                 <div class="col">
-                                    <img src="img/html.png" class="img-thumbnail icon" alt="...">
+                                    <img src="img/html.png" class="img-thumbnail icon" alt="HTML5">
+                                    <b class="tecnologia">HTML</b>
                                 </div>
                                 <div class="col">
-                                    <img src="img/javaScript.png" class="img-thumbnail icon" alt="...">
+                                    <img src="img/javaScript.png" class="img-thumbnail icon" alt="javaScript">
+                                    <b class="tecnologia">javaScript</b>
                                 </div>
                                 <div class="col">
-                                    <img src="img/css.png" class="img-thumbnail icon" alt="...">
+                                    <img src="img/css.png" class="img-thumbnail icon" alt="css">
+                                    <b class="tecnologia">CSS</b>
                                 </div>
                                 <div class="col">
-                                    <img src="img/angular.png" class="img-thumbnail icon" alt="...">
+                                    <img src="img/angular.png" class="img-thumbnail icon" alt="Angular">
+                                    <b class="tecnologia">Angular</b>
                                 </div>
                             </div>
                         </div>
@@ -225,10 +244,12 @@
                         <div class="galeria-fotos container text-center">
                             <div class="row">
                                 <div class="col">
-                                    <img src="img/mySQL.png" class="img-thumbnail icon" alt="...">
+                                    <img src="img/mySQL.png" class="img-thumbnail icon" alt="mySQL">
+                                    <b class="tecnologia">mySQL</b>
                                 </div>
                                 <div class="col">
-                                    <img src="img/SQLServer.png" class="img-thumbnail icon" alt="...">
+                                    <img src="img/SQLServer.png" class="img-thumbnail icon" alt="SQLServer">
+                                    <b class="tecnologia">SQLServer</b>
                                 </div>
                             </div>
                         </div>
@@ -240,16 +261,20 @@
                         <div class="galeria-fotos container text-center">
                             <div class="row row-cols-2">
                                 <div class="col">
-                                    <img src="img/github.png" class="img-thumbnail icon" alt="...">
+                                    <img src="img/github.png" class="img-thumbnail icon" alt="Github">
+                                    <b class="tecnologia">Github</b>
                                 </div>
                                 <div class="col">
-                                    <img src="img/jUnit.png" class="img-thumbnail icon" alt="...">
+                                    <img src="img/jUnit.png" class="img-thumbnail icon" alt="jUnit">
+                                    <b class="tecnologia">jUnit</b>
                                 </div>
                                 <div class="col">
-                                    <img src="img/zeroC.png" class="img-thumbnail icon" alt="...">
+                                    <img src="img/zeroC.png" class="img-thumbnail icon" alt="ZeroC">
+                                    <b class="tecnologia">ZeroC</b>
                                 </div>
                                 <div class="col">
-                                    <img src="img/spring.png" class="img-thumbnail icon" alt="...">
+                                    <img src="img/spring.png" class="img-thumbnail icon" alt="Spring Boot">
+                                    <b class="tecnologia">Spring Boot</b>
                                 </div>
                             </div>
                         </div>
@@ -265,7 +290,7 @@
             <div class="row row-cols-1 row-cols-md-2 g-4">
                 <div class="col">
                 <div class="card">
-                    <img src="img/proyecto1.png" class="card-img-top" alt="...">
+                    <img src="img/proyecto1.png" class="card-img-top" alt="esiGames">
                     <div class="card-body">
                     <h5 class="card-title">esiGames</h5>
                     <p class="card-text">En nuestro portal podrás jugar minijuegos como el FlappyBird, Tetris, Pong, Snake y BrickBreaker.<br>Implementado con Python haciendo uso de las librerías Pygame y Tkinter.<br>Proyecto realizado en colaboración con José Luis Nieto y Johnatan Mora.</p>
@@ -274,7 +299,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                    <img src="img/proyecto3.png" class="card-img-top" alt="...">
+                    <img src="img/proyecto3.png" class="card-img-top" alt="BetGenius">
                     <div class="card-body">
                         <h5 class="card-title">BetGenius</h5>
                         <p class="card-text">Bot de Telegram que predice el resultado de los partidos de fútbol que se juegan a diario.<br> Implementado en Python haciendo uso de la API de BotTelegram y APIFootball. También consta de sitio web para el registro y acceso al bot.<br>Proyecto realizado en colaboración con José Luis Nieto y Johnatan Mora.</p>
@@ -283,7 +308,7 @@
                 </div>
                 <div class="col">
                 <div class="card">
-                    <img src="img/proyecto2.png" class="card-img-top" alt="...">
+                    <img src="img/proyecto2.png" class="card-img-top" alt="Reconocedor de matrículas">
                     <div class="card-body">
                     <h5 class="card-title">Reconocedor de matrículas</h5>
                     <p class="card-text">Implementado con Python haciendo uso de las librerías OpenCV y OCR.<br>Página web en la que podrás cargar una imagen de un coche y se identificará su matrícula.<br>Proyecto realizado en colaboración con José Luis Nieto.</p>
@@ -292,7 +317,7 @@
                 </div>
                 <div class="col">
                 <div class="card">
-                    <img src="img/proyecto5.png" class="card-img-top" alt="...">
+                    <img src="img/proyecto5.png" class="card-img-top" alt="IPOPokemon">
                     <div class="card-body">
                     <h5 class="card-title">IPOPokemon</h5>
                     <p class="card-text">Aplicacion de escritorio para ver información sobre Pokemons y realizar combates entre ellos.<br>Realizado utilizando el framework WPF y el lenguaje C# en Microsoft Visual Studio Code.<br>Proyecto realizado en colaboración con José Luis Nieto.</p>
@@ -349,14 +374,11 @@
                 <a href="mailto:raulmoycam@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope iconos"></i></a>
             </li>
         </ul>
-        <p class="copyright-text">Raúl Moya Campillos © Copyright 2023</p>
+        <p class="copyright-text">Raúl Moya Campillos</p>
     </section>
-
 
     <!-- Bootstrap core JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script src="script.js"></script>
 
 </body>
 

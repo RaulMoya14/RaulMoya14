@@ -4,6 +4,9 @@ html {
 body{
     text-align: justify;
 }
+a{
+    color: #ff5080 !important;
+}
 /* Estilos CSS para la barra de navegación */
 body .navbar {
     background-color: #343439 !important;
@@ -48,11 +51,10 @@ body .navbar {
 }
 
 #inicio {
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("img/fondo-inicio.jpg");
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../img/fondo-inicio.jpg");
     background-size: cover;
     background-position: center center;
-    height: 100vh;
-    padding: 30px;
+    padding: 3%;
 }
 
 #inicio .contenido header {
@@ -160,18 +162,9 @@ body .navbar {
     text-transform: uppercase;
     transition: .5s;
 }
-
 #inicio .presentacion a:hover {
     background-color: #ff5080;
-}
-
-.sobre-mi .h2 .titulo-seccion {
-    font-size: 32px;
-    text-transform: uppercase;
-    color: #111135;
-    text-decoration: underline;
-    text-decoration-color: #d3d3d3;
-    text-decoration-thickness: 5px;
+    color: #fff !important;
 }
 #sobre-mi {
     max-width: 100%;
@@ -180,24 +173,19 @@ body .navbar {
     display: flex;
     padding-top: 70px;
     background-color: white;
+    padding: 20px 20px;
 }
-.col .img-me{
-    width: 400px;
-    height: auto;
-    padding: 5px;
-}
-#sobre-mi .sobre-mi {
-    margin: 5px 5px;
-}
-
-#sobre-mi .titulo-seccion {
+#sobre-mi .titulo-seccion{
     font-size: 32px;
     text-transform: uppercase;
     color: #111135;
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
-    margin-bottom: 80px;
+    padding: 40px;
+}
+#sobre-mi .sobre-mi {
+    margin: 5px 5px;
 }
 
 #sobre-mi .sobre-mi h2 {
@@ -207,11 +195,11 @@ body .navbar {
     letter-spacing: 2px;
 }
 
-#sobre-mi .sobre-mi h2 span {
+#sobre-mi .my-3 h2 span {
     color: #ff5080;
 }
 
-#sobre-mi .sobre-mi h3 {
+#sobre-mi .h3 {
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
@@ -223,7 +211,8 @@ body .navbar {
     font-size: 16px;
     line-height: 25px;
     color: #565656;
-    margin-bottom: 12px;
+    margin-bottom: 18px;
+    margin-top: 18px;
 }
 
 #sobre-mi .sobre-mi a {
@@ -237,14 +226,19 @@ body .navbar {
     transition: .5s;
 }
 
-.sobre-mi .col-md-5 i span{
+#sobre-mi .col-md-5 i span{
     font-size: 15px;
     margin-left: 20px;
     text-align: right;
     /* Ajusta el tamaño de la fuente */
 }
+.col-md-6 .img-fluid{
+    max-width: 82% !important;
+    align-items: center !important;
+    padding-left: 20%;
+}
 
-.sobre-mi .col-md-5 {
+#sobre-mi .col-md-5 {
     border: 2px solid #ff5080; /* Cambia el color del borde según tus preferencias */
     padding: 5px;
     margin-right: 1px; /* Ajusta el margen entre el icono y el texto según tus preferencias */
@@ -322,7 +316,7 @@ span.single-timeline-horizontal {
 }
 #servicios .fila .servicio {
     background-color: #fff;
-    padding: 40px;
+    padding: 50px;
     margin: 20px;
     border-radius: 15px;
     transition: .5s;
@@ -342,7 +336,7 @@ span.single-timeline-horizontal {
     box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
 }
 #servicios .col .img {
-    width: 100px;
+    width: 90px;
     margin: 10px 10px;
 }
 #servicios .icon {
@@ -350,6 +344,7 @@ span.single-timeline-horizontal {
     border: 0px;
     width: 80%;
     height: auto;
+    padding-top: 30px;
 }
 /*seccion FORMACION */
 #formacion {
@@ -547,7 +542,7 @@ span.single-timeline-horizontal {
 }
 
 #footer .iconos {
-    font-size: 35px;
+    font-size: 38px;
     color: #fff;
     /* Cambia el color de los iconos a blanco */
 }
@@ -566,10 +561,4 @@ span.single-timeline-horizontal {
     color: #fff;
     font-size: 16px;
     margin-top: 15px;
-}
-
-@media (max-width: 767px) {
-    #portfolio .card {
-        padding: 40px; /* Ajusta el margen entre las tarjetas en dispositivos móviles */
-    }
 }
